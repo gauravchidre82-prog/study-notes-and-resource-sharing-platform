@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">CampusNotes project flowchart</title>
+  <desc id="desc">A presentation flowchart showing student, teacher, and admin journeys and the study material review and publishing process.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f8ff"/>
+      <stop offset="1" stop-color="#edf5f7"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#173b70"/>
+      <stop offset="1" stop-color="#256b8a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#193454" flood-opacity=".12"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#71839a"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#3974bd"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#28856f"/>
+    </marker>
+    <style>
+      text { font-family: "Aptos", "Segoe UI", Arial, sans-serif; fill: #20324b; }
+      .title { font-size: 38px; font-weight: 750; fill: #fff; }
+      .subtitle { font-size: 17px; fill: #dce9f5; }
+      .lane-title { font-size: 17px; font-weight: 700; letter-spacing: 1.2px; }
+      .node-title { font-size: 18px; font-weight: 700; }
+      .node-copy { font-size: 14px; fill: #586a80; }
+      .small { font-size: 13px; font-weight: 650; }
+      .connector { fill: none; stroke: #71839a; stroke-width: 3; marker-end: url(#arrow); }
+      .connector-blue { fill: none; stroke: #3974bd; stroke-width: 3; marker-end: url(#arrowBlue); }
+      .connector-green { fill: none; stroke: #28856f; stroke-width: 3; marker-end: url(#arrowGreen); }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#background)"/>
+  <rect x="0" y="0" width="1600" height="125" fill="url(#header)"/>
+  <circle cx="1480" cy="27" r="110" fill="#ffffff" opacity=".06"/>
+  <circle cx="1540" cy="115" r="65" fill="#ffffff" opacity=".05"/>
+  <text x="70" y="59" class="title">CampusNotes</text>
+  <text x="72" y="91" class="subtitle">Project Flowchart • Role-based access and study material approval</text>
+
+  <!-- Main access flow -->
+  <rect x="55" y="157" width="1490" height="152" rx="22" fill="#fff" opacity=".72" stroke="#d9e3ed"/>
+  <text x="82" y="185" class="lane-title" fill="#62758d">01  ACCESS THE PLATFORM</text>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="207" width="225" height="72" rx="15" fill="#fff" stroke="#b8cbe0" stroke-width="2"/>
+    <rect x="368" y="207" width="245" height="72" rx="15" fill="#fff" stroke="#b8cbe0" stroke-width="2"/>
+    <rect x="715" y="196" width="225" height="52" rx="13" fill="#eaf2ff" stroke="#7ea6df" stroke-width="2"/>
+    <rect x="715" y="255" width="225" height="52" rx="13" fill="#e9f7f3" stroke="#77b9a7" stroke-width="2"/>
+    <rect x="1045" y="196" width="410" height="52" rx="13" fill="#eef4fb" stroke="#9fb3cc" stroke-width="2"/>
+    <rect x="1045" y="255" width="410" height="52" rx="13" fill="#fff4df" stroke="#ddb967" stroke-width="2"/>
+  </g>
+  <text x="200" y="238" text-anchor="middle" class="node-title">Open CampusNotes</text>
+  <text x="200" y="261" text-anchor="middle" class="node-copy">Home / landing page</text>
+  <text x="490" y="238" text-anchor="middle" class="node-title">Choose a portal</text>
+  <text x="490" y="261" text-anchor="middle" class="node-copy">Student • Teacher • Admin</text>
+  <text x="827" y="229" text-anchor="middle" class="node-title">Student login / register</text>
+  <text x="827" y="289" text-anchor="middle" class="node-title">Teacher login / register</text>
+  <text x="1250" y="229" text-anchor="middle" class="node-title">Student Dashboard</text>
+  <text x="1250" y="288" text-anchor="middle" class="node-title">Teacher Dashboard</text>
+
+  <path d="M313 243 H368" class="connector"/>
+  <path d="M613 243 H665 V222 H715" class="connector-blue"/>
+  <path d="M665 243 V281 H715" class="connector-green"/>
+  <path d="M940 222 H1045" class="connector-blue"/>
+  <path d="M940 281 H1045" class="connector-green"/>
+
+  <!-- Student journey -->
+  <rect x="55" y="337" width="725" height="437" rx="22" fill="#fff" opacity=".78" stroke="#d5e2f2"/>
+  <rect x="55" y="337" width="725" height="52" rx="22" fill="#eaf2ff"/>
+  <path d="M55 367 Q55 389 77 389 H758 Q780 389 780 367" fill="#eaf2ff"/>
+  <text x="82" y="371" class="lane-title" fill="#2f65a8">02  STUDENT EXPERIENCE</text>
+
+  <g filter="url(#shadow)">
+    <rect x="94" y="430" width="270" height="92" rx="16" fill="#fff" stroke="#8fb1df" stroke-width="2"/>
+    <rect x="464" y="416" width="270" height="92" rx="16" fill="#f0f6ff" stroke="#8fb1df" stroke-width="2"/>
+    <rect x="464" y="548" width="270" height="92" rx="16" fill="#fff" stroke="#8fb1df" stroke-width="2"/>
+    <rect x="464" y="674" width="270" height="72" rx="16" fill="#eef8f5" stroke="#84c1b1" stroke-width="2"/>
+  </g>
+  <text x="229" y="465" text-anchor="middle" class="node-title">Student Dashboard</text>
+  <text x="229" y="489" text-anchor="middle" class="node-copy">Browse • Upload • My Uploads</text>
+  <text x="229" y="508" text-anchor="middle" class="node-copy">Saved materials • Profile • Settings</text>
+  <text x="599" y="451" text-anchor="middle" class="node-title">Browse approved materials</text>
+  <text x="599" y="477" text-anchor="middle" class="node-copy">Search and filter by branch, year,</text>
+  <text x="599" y="496" text-anchor="middle" class="node-copy">semester, and subject</text>
+  <text x="599" y="583" text-anchor="middle" class="node-title">Use a resource</text>
+  <text x="599" y="608" text-anchor="middle" class="node-copy">Open / download • Save • Rate notes</text>
+  <text x="599" y="704" text-anchor="middle" class="node-title">View upload status</text>
+  <text x="599" y="728" text-anchor="middle" class="node-copy">Approved • Pending • Rejected</text>
+
+  <path d="M1250 248 V354 H229 V430" class="connector-blue"/>
+  <path d="M364 462 H464" class="connector-blue"/>
+  <path d="M599 508 V548" class="connector-blue"/>
+  <path d="M364 495 H412 V710 H464" class="connector"/>
+  <path d="M599 640 V674" class="connector"/>
+
+  <!-- Material review lifecycle -->
+  <rect x="810" y="337" width="735" height="437" rx="22" fill="#fff" opacity=".78" stroke="#d7e8e2"/>
+  <rect x="810" y="337" width="735" height="52" rx="22" fill="#e9f7f3"/>
+  <path d="M810 367 Q810 389 832 389 H1523 Q1545 389 1545 367" fill="#e9f7f3"/>
+  <text x="837" y="371" class="lane-title" fill="#247966">03  SHARE, REVIEW &amp; PUBLISH</text>
+
+  <g filter="url(#shadow)">
+    <rect x="850" y="420" width="270" height="82" rx="16" fill="#fff" stroke="#83bdae" stroke-width="2"/>
+    <rect x="850" y="558" width="270" height="82" rx="16" fill="#f0f8f6" stroke="#83bdae" stroke-width="2"/>
+    <polygon points="1260,426 1340,480 1260,534 1180,480" fill="#fff5df" stroke="#d8ad52" stroke-width="2"/>
+    <rect x="1372" y="415" width="145" height="78" rx="15" fill="#e9f7f3" stroke="#78b9a6" stroke-width="2"/>
+    <rect x="1372" y="548" width="145" height="78" rx="15" fill="#fff0ee" stroke="#df9c93" stroke-width="2"/>
+    <rect x="1180" y="674" width="337" height="72" rx="16" fill="#f2f6fb" stroke="#a8bacd" stroke-width="2"/>
+  </g>
+  <text x="985" y="452" text-anchor="middle" class="node-title">Submit material</text>
+  <text x="985" y="476" text-anchor="middle" class="node-copy">Student uploads study resources</text>
+  <text x="985" y="495" text-anchor="middle" class="node-copy">Teacher uploads notes / lecture videos</text>
+  <text x="985" y="590" text-anchor="middle" class="node-title">Pending admin review</text>
+  <text x="985" y="615" text-anchor="middle" class="node-copy">Submission enters approval queue</text>
+  <text x="1260" y="475" text-anchor="middle" class="node-title">Admin</text>
+  <text x="1260" y="497" text-anchor="middle" class="node-title">decision</text>
+  <text x="1445" y="449" text-anchor="middle" class="node-title">Approved</text>
+  <text x="1445" y="473" text-anchor="middle" class="node-copy">Published</text>
+  <text x="1445" y="581" text-anchor="middle" class="node-title">Rejected</text>
+  <text x="1445" y="605" text-anchor="middle" class="node-copy">Reason recorded</text>
+  <text x="1348" y="469" class="small" fill="#28856f">Yes</text>
+  <text x="1272" y="572" class="small" fill="#b34d45">No</text>
+  <text x="1348" y="700" text-anchor="middle" class="node-title">Admin portal</text>
+  <text x="1348" y="726" text-anchor="middle" class="node-copy">Manage materials, students, permissions, stats &amp; logs</text>
+
+  <path d="M734 462 H850" class="connector-blue"/>
+  <path d="M1250 307 V354 H985 V420" class="connector-green"/>
+  <path d="M985 502 V558" class="connector-green"/>
+  <path d="M1120 599 H1148 V480 H1180" class="connector-green"/>
+  <path d="M1340 480 H1372" class="connector-green"/>
+  <path d="M1260 534 V587 H1372" class="connector"/>
+  <path d="M1372 454 H1348 V355" class="connector-green"/>
+  <path d="M1372 587 H1338 V710 H1517" class="connector"/>
+  <path d="M1445 415 V350 H599 V416" class="connector-green"/>
+  <path d="M1445 626 V710 H734" class="connector"/>
+
+  <!-- Footer -->
+  <rect x="55" y="812" width="1490" height="112" rx="20" fill="#173b70"/>
+  <text x="88" y="851" font-size="17" font-weight="700" fill="#fff">Core workflow</text>
+  <text x="88" y="882" font-size="16" fill="#e2ecf6">Students and teachers share learning resources → Admin reviews submissions → Approved materials become available to students.</text>
+  <rect x="88" y="897" width="12" height="12" rx="3" fill="#78a9e8"/>
+  <text x="108" y="908" font-size="13" fill="#e2ecf6">Student activity</text>
+  <rect x="252" y="897" width="12" height="12" rx="3" fill="#75baa8"/>
+  <text x="272" y="908" font-size="13" fill="#e2ecf6">Teacher / published material</text>
+  <rect x="490" y="897" width="12" height="12" rx="3" fill="#e2bd68"/>
+  <text x="510" y="908" font-size="13" fill="#e2ecf6">Admin decision</text>
+</svg>
